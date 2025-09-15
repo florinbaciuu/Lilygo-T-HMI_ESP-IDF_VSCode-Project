@@ -1,0 +1,19 @@
+Soluție: Activează comanda code
+🧭 Dacă ești pe macOS și ai instalat VSCode cu interfața grafică (din .dmg):
+Deschide VSCode
+
+Apasă Cmd + Shift + P → apare bara aia de comenzi
+
+Tastează:
+
+bash
+Copiază
+Editează
+shell command
+Selectează:
+
+bash
+Copiază
+Editează
+Shell Command: Install 'code' command in PATH
+Închide terminalul și redeschide-l (sau dă un source ~/.zprofile dacă ai configurat zsh)

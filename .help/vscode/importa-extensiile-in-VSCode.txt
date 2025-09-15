@@ -1,0 +1,12 @@
+(Bonus) Cum le reinstalezi pe alt sistem:
+Dacă ai vscode-extensions.txt, atunci pe alt calculator faci:
+
+"""
+cat extras/vscode-extensions.txt | xargs -L 1 code --install-extension
+"""
+
+Sau și mai hardcore:
+
+"""
+xargs -a extras/vscode-extensions.txt -n 1 code --install-extension
+"""

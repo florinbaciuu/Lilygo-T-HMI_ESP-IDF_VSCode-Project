@@ -1,0 +1,3 @@
+-Wdeprecated-enum-enum-conversion
+-Wunused-function
+-Wimplicit-function-declaration

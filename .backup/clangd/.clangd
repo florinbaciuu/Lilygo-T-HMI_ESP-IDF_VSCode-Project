@@ -1,0 +1,36 @@
+CompileFlags:
+    Remove: [-f*, -m*]
+    Add:
+    - -std=gnu17
+    - -Wall
+    - -Wextra
+    - -Wno-unused-parameter
+    - -Wno-unused-function
+    - -Wno-missing-field-initializers
+    - -DESP_PLATFORM
+    - -DCONFIG_IDF_TARGET=esp32s3
+    - -I${workspaceFolder}/build/config
+    - -I${workspaceFolder}/components
+    - -I${workspaceFolder}/main/include
+    - -I${workspaceFolder}/build/include
+
+Diagnostics:
+  ClangTidy:
+    Add: [bugprone-*, modernize-*, performance-*]
+    Remove: [cppcoreguidelines-avoid-magic-numbers]
+    CheckOptions:
+      readability-identifier-naming.NamespaceCase: CamelCase
+      modernize-use-nullptr.NullMacros: ['NULL']
+
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
+  Designators: Yes
+
+Hover:
+  ShowAKA: Yes
+
+Index:
+  Background: Yes
+  StandardLibrary: Yes

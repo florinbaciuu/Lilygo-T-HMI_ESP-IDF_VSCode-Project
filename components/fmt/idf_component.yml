@@ -1,0 +1,15 @@
+dependencies:
+  idf:
+    version: '>=4.1'
+description: Formatting library providing a fast and safe alternative to C stdio and
+  C++ iostreams.
+repository: git://github.com/espressif/idf-extra-components.git
+repository_info:
+  commit_sha: 47c8e7b10314cd04ef39bae5623552f5deaa521a
+  path: fmt
+sbom:
+  manifests:
+  - dest: fmt
+    path: sbom_fmt.yml
+url: https://github.com/espressif/idf-extra-components/tree/master/fmt
+version: 11.0.1

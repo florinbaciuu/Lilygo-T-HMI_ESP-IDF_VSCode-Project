@@ -1,0 +1,15 @@
+# Kconfig file for LVGL v9.3.0
+# Edited by Florin Aurel Baciu
+
+menu "LVGL configuration"
+
+	config LV_CONF_SKIP
+		bool "Check this to not use custom lv_conf.h"
+		default y
+
+	config LV_CONF_MINIMAL
+		bool "LVGL minimal configuration"
+		default y
+
+
+endmenu

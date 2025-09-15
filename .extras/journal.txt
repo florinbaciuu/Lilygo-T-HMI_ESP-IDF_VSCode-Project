@@ -1,0 +1,35 @@
+Date   2025-07-10, time   20:40 (PM), Modified in ESP-IDF file: /Users/florinbaciu/esp/v5.4.2/esp-idf/components/esp_lcd/include/esp_lcd_io_i2c.h
+at line 86 to 98 because of this ERROR:
+""
+conflicting declaration of C function 'esp_err_t esp_lcd_new_panel_io_i2c(i2c_master_bus_handle_t, const esp_lcd_panel_io_i2c_config_t*, esp_lcd_panel_io_t**)'
+""
+modified code is:
+"" 
+/**
+ * @brief Create LCD panel IO handle
+ *
+ * @param[in] bus I2C bus ID, indicates which I2C port to use
+ * @param[in] io_config IO configuration, for I2C interface
+ * @param[out] ret_io Returned IO handle
+ * @return
+ *          - ESP_ERR_INVALID_ARG   if parameter is invalid
+ *          - ESP_ERR_NO_MEM        if out of memory
+ *          - ESP_OK                on success
+ */
+/***
+ * @author Baciu Aurel Florin
+ * @date   2025-07-10
+ * @time   20:40 (PM)
+ * @attention This function is broken. I commented it out to avoid confusion.
+ * @note Please use `esp_lcd_new_panel_io_i2c_v2` instead.
+ * @deprecated Use `esp_lcd_new_panel_io_i2c_v2` instead.
+ * @note This function is :
+ */
+// static inline esp_err_t esp_lcd_new_panel_io_i2c(uint32_t bus, const esp_lcd_panel_io_i2c_config_t *io_config, esp_lcd_panel_io_handle_t *ret_io)
+// {
+//     return esp_lcd_new_panel_io_i2c_v1(bus, io_config, ret_io);
+// }
+""
+
+
+=================================================

@@ -1,0 +1,59 @@
+BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: false
+  AfterClass: false
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterStruct: false
+  AfterNamespace: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+
+
+AlignAfterOpenBracket: DontAlign
+AllowShortIfStatementsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortLoopsOnASingleLine: false
+
+DerivePointerAlignment: false
+PointerAlignment: Left
+SpaceBeforeParens: ControlStatements
+
+# 🔹 Adăugate pentru format corect argumente
+BinPackArguments: false
+BinPackParameters: false
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowAllConstructorInitializersOnNextLine: true
+ColumnLimit: 0
+
+
+AlignConsecutiveAssignments: AcrossEmptyLines
+AlignConsecutiveDeclarations: true
+
+
+AlignOperands: true
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: true
+BreakBeforeBinaryOperators: All
+BreakConstructorInitializersBeforeComma: true
+CompactNamespaces: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+SortIncludes: false
+IncludeBlocks: Preserve
+SpacesInParentheses: false
+SpaceAfterCStyleCast: true
+SpaceBeforeAssignmentOperators: true
+
+
+# 🔹 Macro
+AlignConsecutiveMacros: Consecutive
+AlignTrailingComments: true
+IndentPPDirectives: AfterHash

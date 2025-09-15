@@ -1,0 +1,64 @@
+Comandă	Funcție	Status
+info tasks	Dump simplu cu vTaskList()	✔️
+tasks	Dump avansat cu load, etc.	✔️
+tasks --kill	Termină un task	💥 to do
+tasks --create	Creează un nou task	💥 to do
+tasks --watch	Mod tip htop embedded	💥 to do
+
+
+xTaskCreatePinnedToCore(
+    my_task_function,
+    "MyTask",
+    2048,
+    NULL,
+    prio,
+    NULL,
+    core
+);
+
+
+tasks --kill <task_name>
+Folosești vTaskDelete(handle) după ce găsești taskul cu:
+
+c
+Copiază
+Editează
+TaskHandle_t xHandle = xTaskGetHandle("MyTask");
+Dar atenție: xTaskGetHandle funcționează doar dacă ai nume unic și setat corect. Altfel, trebuie să-ți ții tu o listă cu handle-uri.
+
+
+
+✅ tasks --suspend <name> / --resume <name>
+Cu:
+
+c
+Copiază
+Editează
+vTaskSuspend(xHandle);
+vTaskResume(xHandle);
+
+
+tasks --cpu-load
+Rulezi tasks_info() avansat, cel cu load în procente, pe un interval dat. Eventual rulezi tasks monitor --watch ca un htop.
+
+🔨 Arhitectură sugerată
+În tasks.c poți avea:
+
+c
+Copiază
+Editează
+typedef struct {
+    const char* name;
+    int (*handler)(int argc, char** argv);
+    const char* desc;
+} task_cli_command_t;
+
+static task_cli_command_t task_commands[] = {
+    { "list", tasks_info, "Show running tasks" },
+    { "kill", task_kill, "Kill a task by name" },
+    { "create", task_create, "Create a new task" },
+    { "suspend", task_suspend, "Suspend task" },
+    { "resume", task_resume, "Resume task" },
+    { NULL, NULL, NULL }
+};
+Și în tasks_main(int argc, char** argv) faci dispatch pe argv[1].

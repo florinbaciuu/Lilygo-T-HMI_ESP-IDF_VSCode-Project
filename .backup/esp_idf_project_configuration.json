@@ -1,0 +1,54 @@
+{
+  "thmi": {
+    "build": {
+      "compileArgs": [],
+      "ninjaArgs": ["-j8"],
+      "buildDirectoryPath": "build/thmi",
+      "sdkconfigDefaults": [
+        "sdkconfig.defaults.thmi"
+      ],
+      "sdkconfigFilePath": "sdkconfig"
+    },
+    "env": {},
+    "flashBaudRate": "",
+    "idfTarget": "esp32s3",
+    "monitorBaudRate": "",
+    "openOCD": {
+      "debugLevel": -1,
+      "configs": [],
+      "args": []
+    },
+    "tasks": {
+      "preBuild": "",
+      "preFlash": "",
+      "postBuild": "",
+      "postFlash": ""
+    }
+  },
+  "thmi2": {
+    "build": {
+      "compileArgs": [],
+      "ninjaArgs": ["-j8"],
+      "buildDirectoryPath": "build/thmi2",
+      "sdkconfigDefaults": [
+        "sdkconfig.defaults.thmi.2"
+      ],
+      "sdkconfigFilePath": "sdkconfig2"
+    },
+    "env": {},
+    "flashBaudRate": "",
+    "idfTarget": "esp32s3",
+    "monitorBaudRate": "",
+    "openOCD": {
+      "debugLevel": -1,
+      "configs": [],
+      "args": []
+    },
+    "tasks": {
+      "preBuild": "",
+      "preFlash": "",
+      "postBuild": "",
+      "postFlash": ""
+    }
+  }
+}

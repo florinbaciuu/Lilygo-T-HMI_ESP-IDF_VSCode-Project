@@ -1,0 +1,17 @@
+# ESP-IDF Partition Table,,,,,,
+# Total 16384K (16 MB),,,,,,
+#       Name,  Type,   SubType,   Offset,   Size,  Flags,
+# bootloader,      ,          ,   0x1000,    32K,       ,  # located at the address 0x1000; Offset default 0x1000(4K);      
+# partitions,      ,          ,   0x8000,     4K,       ,  # Offset default 0x8000(32K);
+         nvs,  data,       nvs,  0x09000,    16K,       ,  # Type:(0x02);
+     otadata,  data,       ota,  0x0D000,     8K,       ,  # Type:(0x00); Default: 8K(0x2000);
+    phy_init,  data,       phy,  0x0F000,     4K,       ,  # Type:(0x01);
+     factory,   app,   factory,  0x10000,  4096K,       ,  # Type:(0x00); offset default 0x10000(64K);  APP standard partition;
+       ota_0,   app,     ota_0, 0x410000,  4096K,       ,  # Type:(0x10);
+       ota_1,   app,     ota_1, 0x810000,  4096K,       ,  # Type:(0x11);
+        ffat,  data,       fat, 0xC10000,  1024K,       ,  # Type:(0x81);
+      spiffs,  data,    spiffs, 0xD10000,  1024K,       ,  # Type:(0x82);
+    littlefs,  data,  littlefs, 0xE10000,  1024K,       ,  # Type:(0x83);
+     eeproom,  data,       nvs, 0xF10000,   892K,       ,  ### EEPROOM PARTITION
+     nvs_key,  data,  nvs_keys, 0xFEF000,     4k,       ,  # Type:(0x04); Default: 4kB(0x1000);
+    coredump,  data,  coredump, 0xFF0000,    64K,       ,  # Type:(0x03); Default: 64kB(0x10000);

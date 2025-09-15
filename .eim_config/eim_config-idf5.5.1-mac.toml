@@ -1,0 +1,16 @@
+path = "/Users/florinbaciu/.espressif"
+esp_idf_json_path = "/Users/florinbaciu/.espressif/tools"
+tool_download_folder_name = "/Users/florinbaciu/.espressif/dist"
+tool_install_folder_name = "/Users/florinbaciu/.espressif/tools"
+target = ["esp32", "esp32c3", "esp32s3", "esp32s2"]
+idf_versions = ["v5.5.1"]
+tools_json_file = "tools/tools.json"
+idf_tools_path = "tools/idf_tools.py"
+config_file_save_path = "/Users/florinbaciu/Desktop/eim_config-idf5.5.1.toml"
+non_interactive = true
+wizard_all_questions = false
+mirror = "https://github.com"
+idf_mirror = "https://github.com"
+recurse_submodules = true
+install_all_prerequisites = false
+skip_prerequisites_check = false

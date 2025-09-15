@@ -1,0 +1,17 @@
+path = 'C:\Espressif\frameworks'
+esp_idf_json_path = 'C:\Espressif\tools'
+tool_download_folder_name = 'C:\Espressif\dist'
+tool_install_folder_name = 'C:\Espressif\tools'
+target = ["all"]
+idf_versions = ["v5.5.1"]
+tools_json_file = "tools/tools.json"
+idf_tools_path = "tools/idf_tools.py"
+config_file_save_path = 'C:\Users\User\Desktop\eim_config.toml'
+non_interactive = false
+wizard_all_questions = false
+mirror = "https://github.com"
+idf_mirror = "https://github.com"
+recurse_submodules = true
+install_all_prerequisites = true
+skip_prerequisites_check = false
+version_name = "idf_v5.5.1"

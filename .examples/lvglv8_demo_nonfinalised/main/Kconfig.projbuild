@@ -1,0 +1,14 @@
+menu "LilyGo Display Product Configuration"
+    choice LILYGO_DISPLAY_BOARD
+        prompt "LilyGo Display Board"
+        default LILYGO_T_DISPLAY_S3_AMOLED
+
+        help
+            Select LilyGo Display Product
+
+        config LILYGO_T_HMI
+            bool "T-HMI 2.8 Inch"
+                        
+    endchoice
+
+endmenu

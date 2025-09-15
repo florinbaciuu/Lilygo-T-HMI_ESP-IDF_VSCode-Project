@@ -1,0 +1,6 @@
+-Wdeprecated-enum-enum-conversion
+-Wunused-function
+-Wimplicit-function-declaration
+-Wmissing-field-initializers
+-Wunused-but-set-variable
+-Wignored-qualifiers

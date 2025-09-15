@@ -1,0 +1,2 @@
+in versiunea asa am schimbat modul freertos de notificare task ca e gata taskul.. am modificat din mutex in notif
+si am setat #define LV_TASK_NOTIFY_SIGNAL_MODE USE_FREERTOS_TASK_NOTIF
