@@ -2,7 +2,7 @@ dependencies:
   esp_lcd_touch:
     dependencies: []
     source:
-      path: C:\Users\User\workspaces\vscode\Lilygo-T-HMI_ESP-IDF_VSCode-Project\components\esp_lcd_touch
+      path: /Users/florinbaciu/workspaces/esp-idf-vscode/Lilygo-T-HMI_ESP-IDF_VSCode-Project/components/esp_lcd_touch
       type: local
     version: 1.1.2
   idf:
@@ -19,7 +19,7 @@ dependencies:
   tinyusb:
     dependencies: []
     source:
-      path: C:\Users\User\workspaces\vscode\Lilygo-T-HMI_ESP-IDF_VSCode-Project\components\tinyusb
+      path: /Users/florinbaciu/workspaces/esp-idf-vscode/Lilygo-T-HMI_ESP-IDF_VSCode-Project/components/tinyusb
       type: local
     version: 0.18.0~2
 direct_dependencies:

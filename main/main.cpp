@@ -1,4 +1,4 @@
-//comment here
+// comment here
 #define BOARD_TFT_DATA0    (48)                // GPIO pin for TFT data line 0
 #define BOARD_TFT_DATA1    (47)                // GPIO pin for TFT data line 1
 #define BOARD_TFT_DATA2    (39)                // GPIO pin for TFT data line 2
