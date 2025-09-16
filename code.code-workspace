@@ -26,32 +26,12 @@
 		},
 		//FONT
 		"editor.semanticHighlighting.enabled": true,
-		
 		//------------------------------------------------------------------
-		//"editor.fontFamily": "BlexMono Nerd Font",
-		//"editor.fontFamily": "Source Code Pro",
-		//"editor.fontFamily": "Consolas",
+		//	"BlexMono Nerd Font", "Source Code Pro", "Consolas", "Hack Nerd Font Mono", "IBM Plex Mono", "JetBrains Mono", "Anonymous Pro", "Cascadia Mono",
+		//	"Cascadia Code", "Dank Mono", "Fira Code", "Cousine", "MonoLisa", "Roboto", "Roboto Mono", "Operator Mono", "SF Mono", "Mononoki", "Overpass",
+		//  "Overpass Mono", "Twilio Sans Mono", "Twilio Sans",
+		//
 		"editor.fontFamily": "Hack Nerd Font",
-		//"editor.fontFamily": "Hack Nerd Font Mono",
-		//"editor.fontFamily": "IBM Plex Mono",
-		//"editor.fontFamily": "JetBrains Mono",
-		//"editor.fontFamily": "Anonymous Pro",
-		//"editor.fontFamily": "Cascadia Mono",
-		//"editor.fontFamily": "Cascadia Code",
-		//"editor.fontFamily": "Dank Mono",
-		//"editor.fontFamily": "Fira Code",
-		//"editor.fontFamily": "Cousine",
-		//"editor.fontFamily": "MonoLisa",
-		//"editor.fontFamily": "Roboto",
-		//"editor.fontFamily": "Roboto Mono",
-		//"editor.fontFamily": "Operator Mono",
-		//"editor.fontFamily": "SF Mono",
-		//"editor.fontFamily": "Mononoki",
-		//"editor.fontFamily": "Overpass",
-		//"editor.fontFamily": "Overpass Mono",
-		//"editor.fontFamily": "Twilio Sans Mono",
-		//"editor.fontFamily": "Twilio Sans",
-		//"editor.fontFamily": "Ubuntu",
 		"editor.fontLigatures": "'zero', 'cant', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'", //work with "Monaspace Neon"
 		//"editor.fontLigatures": true,
 		"editor.detectIndentation": true,
@@ -103,27 +83,10 @@
 		"diffEditor.experimental.showMoves": true,
 		"diffEditor.experimental.useTrueInlineView": true,
 		//------------------------------------------------------------------
-		//Terminal FONT
+		//Terminal FONT //  "BlexMono Nerd Font Mono", "IBM Plex Mono", "Consolas",  "JetBrains Mono", "JetBrains Mono Regular", "JetBrains Mono Light",
+		//		"JetBrains Mono ExtraLight", "JetBrains Mono Thin", "JetBrains Mono Medium", "JetBrains Mono SemiBold", "JetBrains Mono ExtraBold", "Anonymous Pro",
+		//		"Cascadia Mono", "Dank Mono", "Fira Code", "Cousine", "MonoLisa", "Roboto Mono", "Operator Mono",
 		"terminal.integrated.fontFamily": "Hack Nerd Font Mono",
-		//"terminal.integrated.fontFamily": "BlexMono Nerd Font Mono",
-		//"terminal.integrated.fontFamily": "IBM Plex Mono",
-		//"terminal.integrated.fontFamily": "Consolas",
-		//"terminal.integrated.fontFamily": "JetBrains Mono",
-		//"terminal.integrated.fontFamily": "JetBrains Mono Regular",
-		//"terminal.integrated.fontFamily": "JetBrains Mono Light",
-		//"terminal.integrated.fontFamily": "JetBrains Mono ExtraLight",
-		//"terminal.integrated.fontFamily": "JetBrains Mono Thin",
-		//"terminal.integrated.fontFamily": "JetBrains Mono Medium",
-		//"terminal.integrated.fontFamily": "JetBrains Mono SemiBold",
-		//"terminal.integrated.fontFamily": "JetBrains Mono ExtraBold",
-		//"terminal.integrated.fontFamily": "Anonymous Pro",
-		//"terminal.integrated.fontFamily": "Cascadia Mono",
-		//"terminal.integrated.fontFamily": "Dank Mono",
-		//"terminal.integrated.fontFamily": "Fira Code",
-		//"terminal.integrated.fontFamily": "Cousine",
-		//"terminal.integrated.fontFamily": "MonoLisa",
-		//"terminal.integrated.fontFamily": "Roboto Mono",
-		//"terminal.integrated.fontFamily": "Operator Mono",
 		"terminal.integrated.fontSize": 12,
 		"terminal.integrated.letterSpacing": -0,
 		"terminal.integrated.lineHeight": 1,
@@ -245,6 +208,13 @@
 		"accessibility.underlineLinks": true,
 		//------------------------------------------------------------------
 		//
+		"[cpp]": {
+			"editor.wordBasedSuggestions": "currentDocument",
+			"editor.semanticHighlighting.enabled": true,
+			"editor.stickyScroll.defaultModel": "foldingProviderModel",
+			"editor.suggest.insertMode": "replace"
+		},
+		"C_Cpp.intelliSenseEngine": "default",
 		"C_Cpp.intelliSenseCacheSize": 5120,
 		"C_Cpp.autocomplete": "default",
 		"C_Cpp.clang_format_fallbackStyle": "Visual Studio",
@@ -436,8 +406,8 @@
 		],
 		"idf.enableCCache": true,
 		"idf.enableIdfComponentManager": false,
-		"cmakeIntelliSence.cmakePath": "/Users/florinbaciu/.espressif/tools/cmake/3.30.2/cmake-3.30.2-macos-universal/CMake.app/Contents/bin",
-		"cmake.cmakePath": "/Users/florinbaciu/.espressif/tools/cmake/3.30.2/cmake-3.30.2-macos-universal/CMake.app/Contents/bin",
+		//"cmakeIntelliSence.cmakePath": "/Users/florinbaciu/.espressif/tools/cmake/3.30.2/cmake-3.30.2-macos-universal/CMake.app/Contents/bin",
+		//"cmake.cmakePath": "/Users/florinbaciu/.espressif/tools/cmake/3.30.2/cmake-3.30.2-macos-universal/CMake.app/Contents/bin",
 		//----------------------------------------------------
 		//----------------------------------------------------
 	}
